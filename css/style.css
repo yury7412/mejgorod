@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    gap: 16px;
+}
+
+.menu a{
+font-family: 'Montserrat';
+font-weight: 500;
+font-size: 16px;
+font-feature-settings: 'pnum' on, 'lnum' on;
+color: #010101;
+}
+
+.social_media_wrapper{
+    display: flex;
+    gap: 10px;
+}
+
+
+.phone_header{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 22px;
+    color: #010101;
+}
+
+
+.hero_block{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url(../img/hero.png);
+    height: auto;
+    padding-bottom: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+
+.title{
+font-family: 'Montserrat';
+font-weight: 600;
+font-size: 40px;
+text-align: center;
+color: #FFFFFF;
+padding-top: 110px;
+padding-bottom: 20px;
+}
+
+.prg_hero{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+
+}
+
+.btn_hero{
+padding: 10px 65px;
+border: 1.5px solid #FFFFFF;
+border-radius: 20px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+color: #FFFFFF;
+display: block;
+margin: 0 auto;
+width: fit-content;
+}
+
+.title_sections{
+    font-family: 'Montserrat';
+font-weight: 600;
+font-size: 34px;
+text-align: center;
+color: #010101;
+}
+
+.section_container{
+    margin-top: 60px;
+}
+
+.card-img, .card-img-bottom, .card-img-top{
+ object-fit: cover;
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 270px;
+}
+  
+
+  .cards-cont {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card{
+              border-radius: 20px !important;
+            padding: 20px;
+        }
+
+        .card a{
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 20px;
+            color: #010101;
+
+        }
