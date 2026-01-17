@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@22.6.0/dist/css/suggestions.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -74,14 +75,14 @@
                   </div>
 
                    <div class="card"> 
-                  <img src="https://avatars.mds.yandex.net/i?id=4bc9cf920e918c9d3ce27928c3cc674491c03e1b-4479702-images-thumbs&n=13" class="card-img-top" alt="photocardtarife">
+                  <img src="https://avatars.mds.yandex.net/get-autoru-vos/1907787/d35e3b1fb8e17d4c4f6cac8a8b1d6118/1200x900" class="card-img-top" alt="photocardtarife">
                     <div class="card-body "> 
                     <a href="https://samara-taxi-region.ru/ekonom/" class="card-title fw-bold">Универсал класс (От 28 руб. за км)</a>
                     </div>
                   </div>
 
                    <div class="card"> 
-                  <img src="https://avatars.mds.yandex.net/i?id=4bc9cf920e918c9d3ce27928c3cc674491c03e1b-4479702-images-thumbs&n=13" class="card-img-top" alt="photocardtarife">
+                  <img src="https://avatars.mds.yandex.net/get-autoru-vos/2165894/5785f2d67f6943941fd7db913147509d/584x438" class="card-img-top" alt="photocardtarife">
                     <div class="card-body "> 
                     <a href="https://samara-taxi-region.ru/ekonom/" class="card-title fw-bold">Минивэн класс (От 45 руб. за км)</a>
                     </div>
@@ -89,7 +90,7 @@
 
 
                    <div class="card"> 
-                  <img src="https://avatars.mds.yandex.net/i?id=4bc9cf920e918c9d3ce27928c3cc674491c03e1b-4479702-images-thumbs&n=13" class="card-img-top" alt="photocardtarife">
+                  <img src="https://avatars.mds.yandex.net/i?id=c1ff93a6d51204faa6f49c713b81aea025dce55d-4385982-images-thumbs&n=13" class="card-img-top" alt="photocardtarife">
                     <div class="card-body "> 
                     <a href="https://samara-taxi-region.ru/ekonom/" class="card-title fw-bold">Бизнес класс (От 45 руб. за км)</a>
                     </div>
@@ -100,6 +101,300 @@
         </div>
 
     </div>
+
+
+
+
+
+    <div class="section_container">
+        <div class="container">
+           <div class="сont_form" id="calculate">
+            <h2 class="title_sections">Рассчитать стоимость поездки</h2>
+        <div class="input_wrapper">
+            <div class="input-group">
+                <input type="text" id="cityFrom" placeholder="Выберите пункт отправления" />
+            </div>
+            <div class="input-group">
+                <input type="text" id="cityTo" placeholder="Выберите пункт прибытия" />
+            </div>
+        </div>
+        <div class="input-group">
+            <select id="tariff">
+               <option value="20" />Эконом класс (от 20 ₽/км)
+    <option value="25" />Комфорт класс (от 25 ₽/км)
+    <option value="28" />Комфорт Plus (от 28 ₽/км)
+    <option value="20" />Универсал (от 20 ₽/км)
+    <option value="40" />Бизнес класс (от 40 ₽/км)
+    <option value="45" />Минивэн (от 45 ₽/км)      
+
+</select>
+        </div>
+        <div class="input-group" style="display: none;">
+            <button class="btn_dop" id="toggleServicesButton" onclick="toggleServices()">Выбрать дополнительные услуги</button>
+            <select id="services" style="display: none;">
+                <option value="0" />Машина для некурящих (Бесплатно)
+                <option value="100" />Курящий салон (+100 ₽)
+                <option value="150" />Детское кресло, доступно только в классе комфорт (+150 ₽)
+                <option value="150" />Поездка с животным (+150 ₽)
+                <option value="0" />Такси с кондиционером (бесплатно)
+
+<option value="0" />Такси без рекламы (бесплатно)
+<option value="0" />Желтый автомобиль (бесплатно)
+
+<option value="150" />Такси с лыжами и сноубордом (+150 ₽)
+
+<option value="250" />Помощь водителя (+250 ₽)
+
+            </select>
+        </div>
+        <button class="btn_price_taxi" onclick="calculateCost()">Рассчитать стоимость</button>
+        <div class="result" id="result"></div>
+        <div id="map"></div>
+    </div>
+
+   
+    </div>
+</div>
+            
+            
+        </div>
+
+    </div>
+
     
+
+     <div class="section_container">
+        <div class="container">
+            <h2 class="title_sections">Наши услуги</h2>
+             
+            <div class="servise_wrapper">
+                <div class="service_cards">
+                    <div class="left_service_wrapper_card">
+                        <div class="number">01</div>
+                        <div class="name_servise">Такси на день</div>
+                    </div>
+
+                    <div class="right_service_wrapper_card">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+
+                <div class="service_cards">
+                    <div class="left_service_wrapper_card">
+                        <div class="number">02</div>
+                        <div class="name_servise">Встреча в аэропорту</div>
+                    </div>
+
+                    <div class="right_service_wrapper_card">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+
+                <div class="service_cards">
+                    <div class="left_service_wrapper_card">
+                        <div class="number">03</div>
+                        <div class="name_servise">Водитель женщина</div>
+                    </div>
+
+                    <div class="right_service_wrapper_card">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+
+                <div class="service_cards">
+                    <div class="left_service_wrapper_card">
+                        <div class="number">04</div>
+                        <div class="name_servise">Трезвый водитель</div>
+                    </div>
+
+                    <div class="right_service_wrapper_card">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+
+
+                   <div class="service_cards">
+                    <div class="left_service_wrapper_card">
+                        <div class="number">05</div>
+                        <div class="name_servise">Доставка топлива</div>
+                    </div>
+
+                    <div class="right_service_wrapper_card">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@22.6.0/dist/js/jquery.suggestions.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=d3b3d20b-6c57-4626-b184-69cda98f0559&lang=ru_RU" type="text/javascript"></script>
+
+<script>
+jQuery.noConflict();
+(function($) {
+    $(document).ready(function() {
+        let myMap;
+        let route;
+
+        // Ждем полной загрузки API Яндекс.Карт
+        ymaps.ready(init);
+
+        function init() {
+            console.log("Yandex Maps API loaded");
+        }
+
+        // Функция для форматирования адреса
+        function formatAddress(suggestion) {
+            var data = suggestion.data;
+            var result = suggestion.value;
+            
+            if (data.city || data.settlement) {
+                result = (data.city || data.settlement) + ', ';
+                if (data.street) result += data.street;
+                if (data.house) result += ', ' + data.house;
+                if (data.flat) result += ', кв. ' + data.flat;
+                if (data.block) result += ', корп. ' + data.block;
+            }
+            
+            return result;
+        }
+
+        $("#cityFrom").suggestions({
+            token: "2ca423f90d51a7825cab5f07efdbf16f37c589f5",
+            type: "ADDRESS",
+            count: 5,
+            minChars: 3,
+            onSelect: function(suggestion) {
+                console.log("Выбрано место отправления:", suggestion.value);
+            }
+        });
+        
+        $("#cityTo").suggestions({
+            token: "2ca423f90d51a7825cab5f07efdbf16f37c589f5",
+            type: "ADDRESS",
+            count: 5,
+            minChars: 3,
+            onSelect: function(suggestion) {
+                console.log("Выбрано место назначения:", suggestion.value);
+            }
+        });
+    });
+
+    function toggleServices() {
+        const servicesSelect = document.getElementById('services');
+        const toggleButton = document.getElementById('toggleServicesButton');
+
+        if (servicesSelect.style.display === 'none') {
+            servicesSelect.style.display = 'block';
+            toggleButton.textContent = '';
+        } else {
+            servicesSelect.style.display = 'none';
+            toggleButton.textContent = 'Выбрать дополнительные услуги';
+        }
+    }   
+
+    function calculateCost() {
+        var cityFrom = document.getElementById('cityFrom').value.trim();
+        var cityTo = document.getElementById('cityTo').value.trim();
+        var tariff = parseFloat(document.getElementById('tariff').value);
+        var selectedServices = Array.from(document.getElementById('services').selectedOptions).map(option => parseFloat(option.value));
+
+        if (!cityFrom || !cityTo) {
+            alert("Пожалуйста, заполните все поля.");
+            return;
+        }
+
+        // Используем уже загруженный ymaps
+        if (typeof ymaps === 'undefined') {
+            alert("Карты не загружены. Пожалуйста, подождите или обновите страницу.");
+            return;
+        }
+
+        ymaps.ready(function () {
+            var geocoderFrom = ymaps.geocode(cityFrom);
+            var geocoderTo = ymaps.geocode(cityTo);
+
+            Promise.all([geocoderFrom, geocoderTo]).then(function (res) {
+                if (res[0].geoObjects.getLength() === 0 || res[1].geoObjects.getLength() === 0) {
+                    alert('Не удалось найти указанные города. Проверьте правильность ввода.');
+                    return;
+                }
+
+                var coordsFrom = res[0].geoObjects.get(0).geometry.getCoordinates();
+                var coordsTo = res[1].geoObjects.get(0).geometry.getCoordinates();
+
+                ymaps.route([coordsFrom, coordsTo]).then(function (route) {
+                    if (!route) {
+                        alert('Не удалось построить маршрут между указанными точками.');
+                        return;
+                    }
+
+                    var distance = route.getLength() / 1000;
+                    var baseCost = distance * tariff;
+
+                    var servicesCost = selectedServices.reduce((sum, cost) => sum + cost, 0);
+
+                    var totalCost = baseCost + servicesCost;
+
+                    document.getElementById('result').innerText = `Стоимость поездки: ${totalCost.toFixed(2)} руб (Расстояние: ${distance.toFixed(2)} км)`;
+
+                    // Показываем блок с картой
+                    document.getElementById('map').style.display = 'block';
+
+                    // Убедимся, что контейнер карты имеет размеры
+                    setTimeout(function() {
+                        if (myMap) {
+                            myMap.destroy();
+                        }
+
+                        myMap = new ymaps.Map("map", {
+                            center: coordsFrom,
+                            zoom: 7
+                        });
+
+                        // Добавляем маршрут на карту
+                        myMap.geoObjects.add(route);
+
+                        // Автоматически подбираем масштаб для отображения всего маршрута
+                        myMap.setBounds(route.getBounds(), {
+                            checkZoomRange: true
+                        });
+
+                    }, 100); // Небольшая задержка для гарантии отображения контейнера
+                    
+                }).catch(function (error) {
+                    console.error('Ошибка при построении маршрута:', error);
+                    alert('Ошибка при построении маршрута: ' + error.message);
+                });
+            }).catch(function (error) {
+                console.error('Ошибка при геокодировании:', error);
+                alert('Ошибка при геокодировании: ' + error.message);
+            });
+        });
+    }
+
+    // Делаем функции глобально доступными
+    window.toggleServices = toggleServices;
+    window.calculateCost = calculateCost;
+    
+})(jQuery);
+</script>
 </body>
 </html>
