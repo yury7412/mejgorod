@@ -309,3 +309,154 @@ font-size: 35px;
     color: #000000;
     cursor: pointer;
 }
+
+.card_advantages{
+    display: flex;
+    gap: 15px;
+}
+
+
+.advantages_wrapper{
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.card_advantages p{
+    font-size: 18px;
+     font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.cards_advantages_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+
+}
+
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    background:#f3b600;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    font-size: 1.3rem;
+    transform: translateY(-50%);
+
+}
+
+.wrapper i:first-child {
+    left: -22px;
+
+}
+
+.wrapper i:last-child {
+    right: -22px;
+
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card {
+    list-style: none;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    width: 98%;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.card .img img {
+    width: 320px;
+    height: 300px;
+    object-fit: cover;
+        border-radius: 20px;
+}
+
+.card h3 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+}
+
+.sity_btn{
+   background: #ffc20b;
+    color: #010101;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px !important;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 80%;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+
+    }
+}
