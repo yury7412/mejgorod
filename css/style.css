@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fefefe;
+}
+
+header .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    gap: 16px;
+}
+
+.menu a{
+font-family: 'Montserrat';
+font-weight: 500;
+font-size: 16px;
+font-feature-settings: 'pnum' on, 'lnum' on;
+color: #010101;
+}
+
+.social_media_wrapper{
+    display: flex;
+    gap: 10px;
+}
+
+
+.phone_header{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 22px;
+    color: #010101;
+}
+
+
+.hero_block{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url(../img/hero.png);
+    height: auto;
+    padding-bottom: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+
+.title{
+font-family: 'Montserrat';
+font-weight: 600;
+font-size: 40px;
+text-align: center;
+color: #FFFFFF;
+padding-top: 110px;
+padding-bottom: 20px;
+}
+
+.prg_hero{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+
+}
+
+.btn_hero{
+padding: 10px 65px;
+border: 1.5px solid #FFFFFF;
+border-radius: 20px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+color: #FFFFFF;
+display: block;
+margin: 0 auto;
+width: fit-content;
+}
+
+.title_sections{
+    font-family: 'Montserrat';
+font-weight: 600;
+font-size: 34px;
+text-align: center;
+color: #010101;
+}
+
+.section_container{
+    margin-top: 60px;
+}
+
+.card-img, .card-img-bottom, .card-img-top{
+ object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 270px;
+}
+  
+
+  .cards-cont {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card{
+              border-radius: 20px !important;
+            padding: 20px;
+        }
+
+        .card a{
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 20px;
+            color: #010101;
+
+        }
+
+
+/* Горизонтальный стиль для формы расчета такси */
+.сont_form {
+    background-color: #ffffff; /* Белый цвет блока */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+       max-width: 80%;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+.сont_form, .title_sections{
+    margin-bottom: 20px;
+}
+
+.input_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: end;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.input-group:not(:has(.btn_dop)) {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #e8ecef;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+    color: #2d3748;
+}
+
+
+
+.input-group input::placeholder {
+    color: #555555;
+    font-weight: 400;
+}
+
+
+
+
+/* Основная кнопка расчета */
+.btn_price_taxi {
+    background: #ffc20b;
+    color: #010101;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+
+.servise_wrapper{
+    margin: 40px auto;
+}
+
+/* Стили для выпадающего списка услуг */
+#services {
+    border: 2px solid #e8ecef;
+    border-radius: 12px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Кастомные стрелки для select */
+.input-group select {  
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    padding-right: 45px;
+}
+
+/* Иконки для полей ввода */
+.input-group:nth-child(1) input {
+   
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    background-size: 22px;
+}
+
+.input-group:nth-child(2) input {
+   
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    background-size: 22px;
+}
+
+.result{
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.number{
+    color: #f3b600;
+
+
+font-family: 'Montserrat';
+font-weight: 500;
+font-size: 35px;
+
+}
+
+.suggestions-promo{
+    display: none !important;
+}
+
+.name_servise{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 21px;
+    color: #000000;
+}
+
+.left_service_wrapper_card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.service_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #010101;
+    padding: 15px 0;
+}
+
+.right_service_wrapper_card button{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.card_advantages{
+    display: flex;
+    gap: 15px;
+}
+
+
+.advantages_wrapper{
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.card_advantages p{
+    font-size: 18px;
+     font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.cards_advantages_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+.card-slider{
+    margin-top: 40px;
+}
+
+
+.card-slider .card-item {
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-slider .card-item .card-image {
+    width: 320px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card-title{
+        font-weight: 500;
+    font-size: 1.56rem;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.card-details{
+    width: 70%;
+}
+
+.card-details a{
+    background: #ffc20b;
+    color: #010101;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px !important;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+}
+
+.swiper-button-next, .swiper-button-prev{
+   color: #f3b600 !important;
+}
+
+.swiper-button-next{
+    padding-left: 30px !important;
+    padding-bottom: 20px !important;
+}
+
+
+
+.swiper-button-prev{
+        margin-left: -12px !important;
+}
+
+.contact_cont{
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/8eb433d6-ec80-4c73-aa15-e114abe90172-md.jpeg) no-repeat center center;
+    background-size: cover;
+    padding: 100px 0 100px;
+    margin-top: 60px;
+}
+
+.contact_cont h2{
+    font-size: 33px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+
+.socila_media_wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.socila_media_wrapper a {
+    padding: 10px 60px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    color: #070707;
+     font-family: 'Montserrat';
+}
+
+.footer{
+    background: #ffc20b;
+    color: #010101;
+    padding: 20px 0;
+    font-size: 15px;
+     font-family: 'Montserrat';
+}
+
+.footer .container{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container a{
+    font-size: 15px;
+     font-family: 'Montserrat';
+       color: #010101;
+}

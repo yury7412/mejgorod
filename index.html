@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@22.6.0/dist/css/suggestions.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="img/logo.svg" alt="logo" width="170px"></a>
+            </div>
+
+            <ul class="menu">
+                <li><a href="">Водителям</a></li>
+                <li><a href="">Цены</a></li>
+                <li><a href="">Услуги</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Выбор города</a></li>
+            </ul>
+
+
+            <div class="social_media_wrapper">
+                <a href="">
+                    <svg width="35" height="35" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0ZM22.3701 10.2822C22.6219 9.27237 21.9851 8.81468 21.3252 9.11426L6.87598 14.6855C5.89034 15.0811 5.89609 15.6308 6.69629 15.876L10.4043 17.0332L18.9883 11.6182C19.3934 11.3725 19.7659 11.5046 19.4609 11.7754L12.5049 18.0518L12.25 21.876C12.625 21.876 12.7907 21.7045 13 21.501L14.8018 19.749L18.5498 22.5186C19.2396 22.8991 19.7373 22.7018 19.9092 21.8779L22.3701 10.2822Z" fill="#229FDA"/>
+                        </svg>
+                </a>
+
+                <a href="">
+                    <svg width="35" height="35" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0ZM15.4941 5.49805C10.5779 5.49812 6.57715 9.49919 6.5752 14.417C6.57453 15.989 6.98508 17.5233 7.76562 18.876L6.5 23.498L11.2285 22.2578C12.5311 22.9683 13.9977 23.3432 15.4902 23.3438H15.4941C20.4119 23.3417 24.4121 19.3406 24.4141 14.4238C24.415 12.0407 23.4876 9.80009 21.8037 8.11426C20.1197 6.42829 17.8802 5.49908 15.4941 5.49805Z" fill="#26D366"/>
+<path d="M15.4978 7.00684C17.4778 7.00762 19.3394 7.77945 20.739 9.18066C22.1387 10.582 22.9087 12.4449 22.908 14.4258C22.9063 18.5134 19.5808 21.8387 15.4949 21.8389H15.4919C14.1617 21.8384 12.8567 21.4811 11.7185 20.8057L11.447 20.6455L8.64136 21.3809L9.39038 18.6455L9.2146 18.3652C8.47253 17.185 8.08027 15.8207 8.08081 14.4199C8.08243 10.3324 11.4085 7.00684 15.4978 7.00684ZM12.3367 10.2979C12.1881 10.2979 11.9462 10.354 11.7419 10.5771C11.5374 10.8005 10.9628 11.3396 10.9626 12.4355C10.9626 13.5316 11.7593 14.591 11.8718 14.7412C11.9832 14.89 13.4438 17.141 15.6794 18.1064C16.2111 18.3361 16.6263 18.4735 16.95 18.5762C17.4838 18.7458 17.9703 18.7215 18.3542 18.6641C18.7827 18.5998 19.6724 18.1249 19.8582 17.6045C20.0437 17.0839 20.0437 16.6378 19.988 16.5449C19.9323 16.452 19.7841 16.3957 19.5613 16.2842C19.3384 16.1726 18.2422 15.634 18.0378 15.5596C17.8338 15.4853 17.6853 15.4482 17.5369 15.6709C17.3883 15.894 16.9608 16.3962 16.8308 16.5449C16.7008 16.6935 16.5711 16.7121 16.3484 16.6006C16.1255 16.489 15.4067 16.2535 14.5554 15.4941C13.8931 14.9032 13.4461 14.1733 13.3162 13.9502C13.1865 13.7273 13.3023 13.6072 13.4138 13.4961C13.514 13.3962 13.6364 13.2355 13.7478 13.1055C13.8592 12.9754 13.8962 12.882 13.9705 12.7334C14.0447 12.5846 14.0076 12.4543 13.9519 12.3428C13.8952 12.2287 13.4509 11.1342 13.2654 10.6885C13.0845 10.2539 12.9002 10.3125 12.7634 10.3057C12.6337 10.2992 12.4851 10.2979 12.3367 10.2979Z" fill="#26D366"/>
+</svg>
+
+                </a>
+            </div>
+
+
+            <a href="tel:+79994448885" class="phone_header">+7 (999) 444-88-85</a>
+        </div>
+    </header>
+
+
+
+
+    <div class="hero_block">
+        <h1 class="title">Междугороднее такси по РФ.<br> Центральная Россия, Юг, Крым, ДНР и ЛНР</h1>
+        <p class="prg_hero">Самое дешевое Междугороднее такси в Центральной России, на Юге и Крыму, в Донецке и ДНР,<br> Луганске и ЛНР, Херсонской и Запорожской областях. Закажи такси круглосуточно по номеру телефона<br> или онлайн через мессенджеры Telegram и WhatsApp по всем направлениям РФ</p>
+        <a href="" class="btn_hero">Заказать такси</a>
+    </div>
+
+    <div class="advantages_wrapper">
+        <div class="cards_advantages_wrapper">
+            <div class="card_advantages">
+                <div>
+                <svg width="35" height="35" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_367_13)">
+                    <path d="M25.668 0H5.66797C2.90654 0 0.667969 2.23858 0.667969 5V25C0.667969 27.7614 2.90654 30 5.66797 30H25.668C28.4294 30 30.668 27.7614 30.668 25V5C30.668 2.23858 28.4294 0 25.668 0Z" fill="#F7B809"/>
+                    <path d="M21.8224 12.2442L20.732 11.2093C20.5849 11.0698 20.4011 11 20.1928 11C19.9846 11 19.8008 11.0698 19.6537 11.2093L14.4097 16.186L12.0695 13.9535C11.9224 13.814 11.7386 13.7442 11.5303 13.7442C11.3221 13.7442 11.1383 13.814 10.9912 13.9535L9.90077 14.9884C9.74148 15.1279 9.66797 15.3023 9.66797 15.5C9.66797 15.6977 9.74148 15.8721 9.88851 16.0116L12.7801 18.7558L13.8706 19.7907C14.0176 19.9302 14.2014 20 14.4097 20C14.618 20 14.8018 19.9302 14.9488 19.7907L16.0393 18.7558L21.8224 13.2674C21.9695 13.1279 22.043 12.9535 22.043 12.7558C22.043 12.5581 21.9695 12.3837 21.8224 12.2442Z" fill="#010101"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_367_13">
+                    <rect width="31" height="30" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+                <p>принимаем плату всеми распространенными способами</p>
+            </div>
+
+             <div class="card_advantages">
+                <div>
+                <svg width="35" height="35" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_367_13)">
+                    <path d="M25.668 0H5.66797C2.90654 0 0.667969 2.23858 0.667969 5V25C0.667969 27.7614 2.90654 30 5.66797 30H25.668C28.4294 30 30.668 27.7614 30.668 25V5C30.668 2.23858 28.4294 0 25.668 0Z" fill="#F7B809"/>
+                    <path d="M21.8224 12.2442L20.732 11.2093C20.5849 11.0698 20.4011 11 20.1928 11C19.9846 11 19.8008 11.0698 19.6537 11.2093L14.4097 16.186L12.0695 13.9535C11.9224 13.814 11.7386 13.7442 11.5303 13.7442C11.3221 13.7442 11.1383 13.814 10.9912 13.9535L9.90077 14.9884C9.74148 15.1279 9.66797 15.3023 9.66797 15.5C9.66797 15.6977 9.74148 15.8721 9.88851 16.0116L12.7801 18.7558L13.8706 19.7907C14.0176 19.9302 14.2014 20 14.4097 20C14.618 20 14.8018 19.9302 14.9488 19.7907L16.0393 18.7558L21.8224 13.2674C21.9695 13.1279 22.043 12.9535 22.043 12.7558C22.043 12.5581 21.9695 12.3837 21.8224 12.2442Z" fill="#010101"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_367_13">
+                    <rect width="31" height="30" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+                <p>работают только квалифицированные, проверенные водители</p>
+            </div>
+
+             <div class="card_advantages">
+               <div>
+                <svg width="35" height="35" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_367_13)">
+                    <path d="M25.668 0H5.66797C2.90654 0 0.667969 2.23858 0.667969 5V25C0.667969 27.7614 2.90654 30 5.66797 30H25.668C28.4294 30 30.668 27.7614 30.668 25V5C30.668 2.23858 28.4294 0 25.668 0Z" fill="#F7B809"/>
+                    <path d="M21.8224 12.2442L20.732 11.2093C20.5849 11.0698 20.4011 11 20.1928 11C19.9846 11 19.8008 11.0698 19.6537 11.2093L14.4097 16.186L12.0695 13.9535C11.9224 13.814 11.7386 13.7442 11.5303 13.7442C11.3221 13.7442 11.1383 13.814 10.9912 13.9535L9.90077 14.9884C9.74148 15.1279 9.66797 15.3023 9.66797 15.5C9.66797 15.6977 9.74148 15.8721 9.88851 16.0116L12.7801 18.7558L13.8706 19.7907C14.0176 19.9302 14.2014 20 14.4097 20C14.618 20 14.8018 19.9302 14.9488 19.7907L16.0393 18.7558L21.8224 13.2674C21.9695 13.1279 22.043 12.9535 22.043 12.7558C22.043 12.5581 21.9695 12.3837 21.8224 12.2442Z" fill="#010101"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_367_13">
+                    <rect width="31" height="30" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+                <p>Автомобили обслужены и готовы преодолевать любые дистанции</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section_container">
+        <div class="container">
+            <h2 class="title_sections">Цены на такси по межгороду</h2>
+
+            <div class="cards-cont">
+                        <div class="card"> 
+                  <img src="https://avatars.mds.yandex.net/get-autoru-vos/11395092/cb7b70167ca0c420bd4ffbedcbb8464f/1200x900" class="card-img-top" alt="photocardtarife">
+                    <div class="card-body "> 
+                    <a href="https://samara-taxi-region.ru/ekonom/" class="card-title fw-bold">Эконом класс (От 25 руб. за км)</a>
+                    </div>
+                  </div>
+
+                   <div class="card"> 
+                  <img src="https://avatars.mds.yandex.net/i?id=d9a7cc0aacbde653209629cfdc29103eadd92fc5-10207868-images-thumbs&n=13" class="card-img-top" alt="photocardtarife">
+                    <div class="card-body "> 
+                    <a href="https://samara-taxi-region.ru/ekonom/" class="card-title fw-bold">Комфорт класс (От 30 руб. за км)</a>
+                    </div>
+                  </div>
+
+                   <div class="card"> 
+                  <img src="https://avatars.mds.yandex.net/get-autoru-vos/1907787/d35e3b1fb8e17d4c4f6cac8a8b1d6118/1200x900" class="card-img-top" alt="photocardtarife">
+                    <div class="card-body "> 
+                    <a href="https://samara-taxi-region.ru/ekonom/" class="card-title fw-bold">Универсал класс (От 28 руб. за км)</a>
+                    </div>
+                  </div>
+
+                   <div class="card"> 
+                  <img src="https://avatars.mds.yandex.net/get-autoru-vos/2165894/5785f2d67f6943941fd7db913147509d/584x438" class="card-img-top" alt="photocardtarife">
+                    <div class="card-body "> 
+                    <a href="https://samara-taxi-region.ru/ekonom/" class="card-title fw-bold">Минивэн класс (От 45 руб. за км)</a>
+                    </div>
+                  </div>
+
+
+                   <div class="card"> 
+                  <img src="https://avatars.mds.yandex.net/i?id=c1ff93a6d51204faa6f49c713b81aea025dce55d-4385982-images-thumbs&n=13" class="card-img-top" alt="photocardtarife">
+                    <div class="card-body "> 
+                    <a href="https://samara-taxi-region.ru/ekonom/" class="card-title fw-bold">Бизнес класс (От 45 руб. за км)</a>
+                    </div>
+                  </div>
+			                
+                  </div>
+			    </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="section_container">
+        <div class="container">
+           <div class="сont_form" id="calculate">
+            <h2 class="title_sections">Рассчитать стоимость поездки</h2>
+        <div class="input_wrapper">
+            <div class="input-group">
+                <input type="text" id="cityFrom" placeholder="Выберите пункт отправления" />
+            </div>
+            <div class="input-group">
+                <input type="text" id="cityTo" placeholder="Выберите пункт прибытия" />
+            </div>
+        </div>
+        <div class="input-group">
+            <select id="tariff">
+               <option value="20" />Эконом класс (от 20 ₽/км)
+    <option value="25" />Комфорт класс (от 25 ₽/км)
+    <option value="28" />Комфорт Plus (от 28 ₽/км)
+    <option value="20" />Универсал (от 20 ₽/км)
+    <option value="40" />Бизнес класс (от 40 ₽/км)
+    <option value="45" />Минивэн (от 45 ₽/км)      
+
+</select>
+        </div>
+        <div class="input-group" style="display: none;">
+            <button class="btn_dop" id="toggleServicesButton" onclick="toggleServices()">Выбрать дополнительные услуги</button>
+            <select id="services" style="display: none;">
+                <option value="0" />Машина для некурящих (Бесплатно)
+                <option value="100" />Курящий салон (+100 ₽)
+                <option value="150" />Детское кресло, доступно только в классе комфорт (+150 ₽)
+                <option value="150" />Поездка с животным (+150 ₽)
+                <option value="0" />Такси с кондиционером (бесплатно)
+
+<option value="0" />Такси без рекламы (бесплатно)
+<option value="0" />Желтый автомобиль (бесплатно)
+
+<option value="150" />Такси с лыжами и сноубордом (+150 ₽)
+
+<option value="250" />Помощь водителя (+250 ₽)
+
+            </select>
+        </div>
+        <button class="btn_price_taxi" onclick="calculateCost()">Рассчитать стоимость</button>
+        <div class="result" id="result"></div>
+        <div id="map"></div>
+    </div>
+
+   
+    </div>
+</div>
+            
+            
+        </div>
+
+    </div>
+
+    
+
+     <div class="section_container">
+        <div class="container">
+            <h2 class="title_sections">Наши услуги</h2>
+             
+            <div class="servise_wrapper">
+                <div class="service_cards">
+                    <div class="left_service_wrapper_card">
+                        <div class="number">01</div>
+                        <div class="name_servise">Такси на день</div>
+                    </div>
+
+                    <div class="right_service_wrapper_card">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+
+                <div class="service_cards">
+                    <div class="left_service_wrapper_card">
+                        <div class="number">02</div>
+                        <div class="name_servise">Встреча в аэропорту</div>
+                    </div>
+
+                    <div class="right_service_wrapper_card">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+
+                <div class="service_cards">
+                    <div class="left_service_wrapper_card">
+                        <div class="number">03</div>
+                        <div class="name_servise">Водитель женщина</div>
+                    </div>
+
+                    <div class="right_service_wrapper_card">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+
+                <div class="service_cards">
+                    <div class="left_service_wrapper_card">
+                        <div class="number">04</div>
+                        <div class="name_servise">Трезвый водитель</div>
+                    </div>
+
+                    <div class="right_service_wrapper_card">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+
+
+                   <div class="service_cards">
+                    <div class="left_service_wrapper_card">
+                        <div class="number">05</div>
+                        <div class="name_servise">Доставка топлива</div>
+                    </div>
+
+                    <div class="right_service_wrapper_card">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+
+
+    <div class="section_container">
+        <div class="container">
+            <h2 class="title_sections">Популярные направления</h2>
+             
+
+             <div class="card-slider swiper">
+      <div class="slider-wrapper">
+        <div class="card-list swiper-wrapper">
+          <div class="card-item swiper-slide">
+            <img src="https://avatars.mds.yandex.net/i?id=8b87d71c20c6130f3614b0a00ededf4fd335e350-5151057-images-thumbs&n=13" alt="photo" class="card-image" />
+            <div class="card-details">
+              <h3 class="card-title">Волгоград</h3>
+<a href="">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="card-item swiper-slide">
+             <img src="https://avatars.mds.yandex.net/i?id=8b87d71c20c6130f3614b0a00ededf4fd335e350-5151057-images-thumbs&n=13" alt="photo" class="card-image" />
+            <div class="card-details">
+              <h3 class="card-title">Волгоград</h3>
+<a href="">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="card-item swiper-slide">
+            <img src="https://avatars.mds.yandex.net/i?id=8b87d71c20c6130f3614b0a00ededf4fd335e350-5151057-images-thumbs&n=13" alt="photo" class="card-image" />
+            <div class="card-details">
+              <h3 class="card-title">Волгоград</h3>
+<a href="">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="card-item swiper-slide">
+            <img src="https://avatars.mds.yandex.net/i?id=8b87d71c20c6130f3614b0a00ededf4fd335e350-5151057-images-thumbs&n=13" alt="photo" class="card-image" />
+           <div class="card-details">
+              <h3 class="card-title">Волгоград</h3>
+<a href="">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="card-item swiper-slide">
+           <img src="https://avatars.mds.yandex.net/i?id=8b87d71c20c6130f3614b0a00ededf4fd335e350-5151057-images-thumbs&n=13" alt="photo" class="card-image" />
+            <div class="card-details">
+              <h3 class="card-title">Волгоград</h3>
+<a href="">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-button swiper-button-prev"></div>
+      <div class="slider-button swiper-button-next"></div>
+    </div>
+
+        </div>
+                 
+
+    </div>
+
+
+
+    <div class="contact_cont">
+        <div class="container">
+            <h2>Наши контакты</h2>
+
+            <div class="socila_media_wrapper"> 
+                    <a href="https://api.whatsapp.com/send?phone=79869531909">WhatsApp</a>
+			                <a href="tel:+79994448885">+7 (999) 444-88-85</a>
+			                <a href="https://t.me/region_treid">Telegram</a>
+			    </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>©2026. Все права защищены.</p>
+            <a href="">Политика Конфиденциальности</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@22.6.0/dist/js/jquery.suggestions.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=d3b3d20b-6c57-4626-b184-69cda98f0559&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+jQuery.noConflict();
+(function($) {
+    $(document).ready(function() {
+        let myMap;
+        let route;
+
+        // Ждем полной загрузки API Яндекс.Карт
+        ymaps.ready(init);
+
+        function init() {
+            console.log("Yandex Maps API loaded");
+        }
+
+        // Функция для форматирования адреса
+        function formatAddress(suggestion) {
+            var data = suggestion.data;
+            var result = suggestion.value;
+            
+            if (data.city || data.settlement) {
+                result = (data.city || data.settlement) + ', ';
+                if (data.street) result += data.street;
+                if (data.house) result += ', ' + data.house;
+                if (data.flat) result += ', кв. ' + data.flat;
+                if (data.block) result += ', корп. ' + data.block;
+            }
+            
+            return result;
+        }
+
+        $("#cityFrom").suggestions({
+            token: "2ca423f90d51a7825cab5f07efdbf16f37c589f5",
+            type: "ADDRESS",
+            count: 5,
+            minChars: 3,
+            onSelect: function(suggestion) {
+                console.log("Выбрано место отправления:", suggestion.value);
+            }
+        });
+        
+        $("#cityTo").suggestions({
+            token: "2ca423f90d51a7825cab5f07efdbf16f37c589f5",
+            type: "ADDRESS",
+            count: 5,
+            minChars: 3,
+            onSelect: function(suggestion) {
+                console.log("Выбрано место назначения:", suggestion.value);
+            }
+        });
+    });
+
+    function toggleServices() {
+        const servicesSelect = document.getElementById('services');
+        const toggleButton = document.getElementById('toggleServicesButton');
+
+        if (servicesSelect.style.display === 'none') {
+            servicesSelect.style.display = 'block';
+            toggleButton.textContent = '';
+        } else {
+            servicesSelect.style.display = 'none';
+            toggleButton.textContent = 'Выбрать дополнительные услуги';
+        }
+    }   
+
+    function calculateCost() {
+        var cityFrom = document.getElementById('cityFrom').value.trim();
+        var cityTo = document.getElementById('cityTo').value.trim();
+        var tariff = parseFloat(document.getElementById('tariff').value);
+        var selectedServices = Array.from(document.getElementById('services').selectedOptions).map(option => parseFloat(option.value));
+
+        if (!cityFrom || !cityTo) {
+            alert("Пожалуйста, заполните все поля.");
+            return;
+        }
+
+        // Используем уже загруженный ymaps
+        if (typeof ymaps === 'undefined') {
+            alert("Карты не загружены. Пожалуйста, подождите или обновите страницу.");
+            return;
+        }
+
+        ymaps.ready(function () {
+            var geocoderFrom = ymaps.geocode(cityFrom);
+            var geocoderTo = ymaps.geocode(cityTo);
+
+            Promise.all([geocoderFrom, geocoderTo]).then(function (res) {
+                if (res[0].geoObjects.getLength() === 0 || res[1].geoObjects.getLength() === 0) {
+                    alert('Не удалось найти указанные города. Проверьте правильность ввода.');
+                    return;
+                }
+
+                var coordsFrom = res[0].geoObjects.get(0).geometry.getCoordinates();
+                var coordsTo = res[1].geoObjects.get(0).geometry.getCoordinates();
+
+                ymaps.route([coordsFrom, coordsTo]).then(function (route) {
+                    if (!route) {
+                        alert('Не удалось построить маршрут между указанными точками.');
+                        return;
+                    }
+
+                    var distance = route.getLength() / 1000;
+                    var baseCost = distance * tariff;
+
+                    var servicesCost = selectedServices.reduce((sum, cost) => sum + cost, 0);
+
+                    var totalCost = baseCost + servicesCost;
+
+                    document.getElementById('result').innerText = `Стоимость поездки: ${totalCost.toFixed(2)} руб (Расстояние: ${distance.toFixed(2)} км)`;
+
+                    // Показываем блок с картой
+                    document.getElementById('map').style.display = 'block';
+
+                    // Убедимся, что контейнер карты имеет размеры
+                    setTimeout(function() {
+                        if (myMap) {
+                            myMap.destroy();
+                        }
+
+                        myMap = new ymaps.Map("map", {
+                            center: coordsFrom,
+                            zoom: 7
+                        });
+
+                        // Добавляем маршрут на карту
+                        myMap.geoObjects.add(route);
+
+                        // Автоматически подбираем масштаб для отображения всего маршрута
+                        myMap.setBounds(route.getBounds(), {
+                            checkZoomRange: true
+                        });
+
+                    }, 100); // Небольшая задержка для гарантии отображения контейнера
+                    
+                }).catch(function (error) {
+                    console.error('Ошибка при построении маршрута:', error);
+                    alert('Ошибка при построении маршрута: ' + error.message);
+                });
+            }).catch(function (error) {
+                console.error('Ошибка при геокодировании:', error);
+                alert('Ошибка при геокодировании: ' + error.message);
+            });
+        });
+    }
+
+    // Делаем функции глобально доступными
+    window.toggleServices = toggleServices;
+    window.calculateCost = calculateCost;
+    
+})(jQuery);
+
+const swiper = new Swiper(".slider-wrapper", {
+  // Optional parameters
+  loop: true,
+  spaceBetween: 30,
+  grabCursor: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1080: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+
+</script>
+</body>
+</html>
