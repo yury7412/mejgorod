@@ -455,6 +455,15 @@ font-size: 35px;
      margin-top: -50px !important;
 }
 
+.header_top_social_media_wrapper{
+    display: none !important;
+}
+
+.header_top{
+    display: flex !important;
+    justify-content: end !important;
+}
+
 .hamburger {
 	position: relative;
 display: none !important;
@@ -527,12 +536,12 @@ display: none !important;
 }
 
 .social_media_list_page_sity button {
-    background-color: #fd5e00;
+    background-color: #f7b809;
     padding: 13px 60px;
     border: none;
     font-size: 16px;
     border-radius: 10px;
-    color: white;
+    color: #010101;
     cursor: pointer;
     transition: all 0.3s 
 cubic-bezier(0.4, 0, 0.2, 1);
@@ -587,25 +596,40 @@ display: block;
 
     .title_sections {
     font-size: 30px;
-}
+    }
 
-.right_service_wrapper_card button{
+    .header_top_social_media_wrapper{
+        display: flex !important;
+        position: relative !important;
+    z-index: 999 !important;
+    }
+
+    .socila_media_wrapper a {
+        width: 100% !important;
+    }
+
+    .title {
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+
+    .right_service_wrapper_card button{
     font-size: 19px;
             width: 120px;
         text-align: end;
 }
+}
+
+
 
 
 .cards-cont{
     padding: 0;
 }
 
-.title {
-        font-size: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-    }
+
 
 
 .сont_form{
@@ -613,7 +637,6 @@ display: block;
 }
 
 .socila_media_wrapper a {
-    width: 70%;
     font-family: 'Montserrat';
     text-align: center;
 }
@@ -623,7 +646,128 @@ display: block;
             flex-wrap: wrap;
         display: flex;
 }
+
+
+/* Стили для оверлея (подложки) */
+.modal-overlay {
+display: none; /* По умолчанию скрыто */
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+z-index: 1000; /* Высокий z-index для отображения над другими элементами */
+justify-content: center;
+align-items: center;
 }
+
+/* Стили для контейнера модального окна */
+.modal-window {
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+max-width: 500px;
+width: 90%;
+position: relative;
+animation: modalFadeIn 0.3s ease-out;
+}
+
+/* Стили для заголовка модального окна */
+.modal-header {
+padding: 15px 20px;
+border-bottom: 1px solid #eaeaea;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.modal-header h3{
+    font-size: 25px;
+}
+
+/* Стили для кнопки закрытия */
+.close-btn {
+font-size: 35px;
+font-weight: bold;
+color: #888;
+cursor: pointer;
+transition: color 0.2s;
+}
+
+.close-btn:hover {
+color: #333;
+}
+
+/* Стили для содержимого модального окна */
+.modal-content {
+padding: 20px;
+max-height: 70vh; /* Максимальная высота для скролла */
+overflow-y: auto; /* Добавление скролла при необходимости */
+}
+
+.main-zakaz{
+    display: grid;
+}
+
+.main-zakaz input{
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+
+
+.main-zakaz textarea{
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    resize: none;
+    font-family: "Montserrat";
+     font-size: 15px;
+}
+
+.btn_zakaz{
+        background: #ffc20b;
+    color: #010101;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+/* Анимация появления модального окна */
+@keyframes modalFadeIn {
+from {
+opacity: 0;
+transform: translateY(-20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Стили для показа модального окна */
+.modal-overlay.active {
+display: flex; /* Меняем на flex для центрирования */
+}
+
+
 
 
 @media(max-width: 450px){
@@ -640,3 +784,8 @@ display: block;
         width: 120px;
     }
 }
+
+
+
+
+
